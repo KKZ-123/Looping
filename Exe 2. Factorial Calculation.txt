@@ -1,0 +1,51 @@
+Exe 2. Factorial Calculation
+
+package testing;
+
+public class FactorialExe {
+	
+	public static void main(String args[]) {
+		
+		fact(5);
+	}
+	
+	public static void fact(int x) {
+		int result = 1;
+		while(x > 0) {
+			result *= x;
+			x--;
+		}
+		System.out.println("Factorial value is " + result);
+	}
+}
+
+Factorial value is 120
+
+***********************************************************
+
+Trace to this code
+
+Step 1 => x = 5; result = 1
+	x = 5 > 0; true; result = 1 * 5 = 5
+	x = 5 - 1 = 4
+
+Step 2 => x = 4; result = 5
+	x = 4 > 0; true; result = 5 * 4 = 20
+	x = 4 - 1 = 3
+
+Step 3 => x= 3; result = 20
+	x = 3 > 0; true; result = 20 * 3 = 60
+	x = 3 - 1 = 2
+
+Step 4 => x= 2; result = 60
+	x = 2 > 0; true; result = 60 * 2 = 120
+	x = 2 - 1 = 1
+
+Step 5 => x = 1; result = 120
+	x = 1 > 0; true; result = 120 * 1 = 120
+	x = 1 - 1 = 0
+
+Step 6 => x = 0; result = 120
+	x = 0 > 0; false ; 
+	end loop
+	

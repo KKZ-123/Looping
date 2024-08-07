@@ -1,0 +1,69 @@
+Exe 1 . Sum of Numbers 1 to 10
+
+
+package testing;
+
+public class Exercise1 {
+	
+	public static void main(String args[]) {
+		
+		int i = 1;
+		int total = 0;
+		while(i <= 10) {	
+			total += i;
+			i++;
+		}
+		System.out.println("Total Value is " + total);
+	}
+	
+	
+}
+
+Total Value is 55
+
+**************************************************************************
+Trace to this code
+
+Step 1 => i = 1, total = 0
+	i = 1 <= 10; true => total = 0 + 1 = 1
+	i = 1 + 1 = 2
+
+Step 2 => i = 2, total = 2
+	i = 2 <= 10; true => total = 2 + 1 = 3
+	i = 2 + 1 = 3
+
+Step 3 => i = 3, total = 3
+	i = 3 <= 10; true => total = 3 + 3 = 6
+	i = 3 + 1 = 4
+
+Step 4 =>  i = 4, total = 6
+	i = 4 <= 10; true => total = 6 + 4 = 10
+	i = 4 + 1 = 5
+
+Step 5 =>  i = 5, total = 10
+	i = 5 <= 10; true => total = 10 + 5 = 15
+	i = 5 + 1 = 6
+
+Step 6 => i = 6, total = 15
+	i = 6 <= 10; true => total = 15 + 6 = 21
+	i = 6 + 1 = 7
+
+Step 7 => i = 7, total = 21
+	i = 7 <= 10; true => total = 21 + 7 = 28
+	i = 7 + 1 = 8
+
+Step 8 => i = 8, total = 28
+	i = 8 <= 10; true => total = 28 + 8 = 36
+	i = 8 + 1 = 9
+
+Step 9 => i = 9, total = 36
+	i = 9 <= 10; true => total = 36 + 9 = 45
+	i = 9 + 1 = 10
+
+Step 10 => i = 10, total = 45
+	i = 10 <= 10; true => total = 45 + 10 = 55
+	i = 10 + 1 = 11
+
+Step 11 => i = 11, total = 55
+	i = 11 <= 10; false
+end loop
